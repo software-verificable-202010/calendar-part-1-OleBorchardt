@@ -1,0 +1,91 @@
+.calendar-container,
+.calendar,
+.calendar-header,
+td,
+tr {
+    padding: 0;
+    margin: 0;
+}
+
+.calendar-header,
+td {
+    border-spacing: 0;
+    padding-left: 5px;
+}
+
+.calendar-container {
+    border: 2px solid skyblue;
+}
+
+.calendar {
+    background-color: white;
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.calendar-header {
+    border-bottom: 1px dashed skyblue;
+    font-size: 1.6em;
+}
+
+.day,
+.empty-slot,
+.weekend,
+.current-day,
+.selected-day {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.day,
+.weekend,
+.selected-day,
+.current-day {
+    font-size: 0.8em;
+    cursor: pointer;
+    text-align: center;
+}
+
+.weekend {
+    background-color: #9abffb;
+}
+
+.current-day {
+    background-color: #4285f4;
+    border-radius: 2%;
+    color: white;
+}
+
+.selected-day {
+    background-color:#f00c0c;
+    border-radius: 2%;
+    color: white;
+}
+
+.prev {
+    max-width: 10px;
+    max-height: 10px;
+    position: relative;
+}
+
+.next {
+    max-width: 10px;
+    max-height: 10px;
+    position: relative;
+}
+
+.editor-year {
+    max-width: 3.6em;
+}
+
+.month-label,
+.label-year {
+    font-size: 0.6em;
+    cursor: pointer;
+}
+
+.editor-tag {
+    max-width: 50px;
+}
